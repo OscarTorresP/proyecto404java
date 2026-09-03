@@ -21,6 +21,9 @@ public class Main {
             System.out.println("Estudiante adulto.");
         }
         estudiante.mostrarInformacion();
+        for (int i=1;i<=5;i++ ){
+            System.out.println("Contando al estudiante nro "+i);
+        }
 
     }
 }
