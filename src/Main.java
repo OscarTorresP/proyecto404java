@@ -4,10 +4,8 @@ public class Main {
         Scanner teclado = new Scanner(System.in);
         System.out.print("Ingrese nombre: ");
         String nombre = teclado.nextLine();
-
         System.out.print("Ingrese carrera: ");
         String carrera = teclado.nextLine();
-
         System.out.print("Ingrese edad: ");
         int edad = teclado.nextInt();
         Estudiante estudiante = new Estudiante(
@@ -15,8 +13,12 @@ public class Main {
                 carrera,
                 edad
         );
+        if (edad >= 18) {
+            System.out.println("Acceso autorizado.");
+        } else {
+            System.out.println("Acceso restringido.");
+        }
         estudiante.mostrarInformacion();
-
 
     }
 }
