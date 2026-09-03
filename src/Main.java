@@ -1,13 +1,22 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        System.out.print("Ingrese nombre: ");
+        String nombre = teclado.nextLine();
+
+        System.out.print("Ingrese carrera: ");
+        String carrera = teclado.nextLine();
+
+        System.out.print("Ingrese edad: ");
+        int edad = teclado.nextInt();
         Estudiante estudiante = new Estudiante(
-                "Oscar",
-                "Ingeniería en Informática",
-                41
+                nombre,
+                carrera,
+                edad
         );
         estudiante.mostrarInformacion();
+
 
     }
 }
